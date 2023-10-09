@@ -37,20 +37,14 @@ class Conversation:
         self,
         message_template=DEFAULT_MESSAGE_TEMPLATE,
         system_prompt=DEFAULT_SYSTEM_PROMPT,
-        start_token_id=1,
+        response_template=DEFAULT_RESPONSE_TEMPLATE
     ):
         self.message_template = message_template
-        self.start_token_id = start_token_id
+        self.response_template = response_template
         self.messages = [{
             "role": "system",
             "content": system_prompt
         }]
-
-    def get_start_token_id(self):
-        return self.start_token_id
-
-    def get_bot_token_id(self):
-        return self.bot_token_id
 
     def add_user_message(self, message):
         self.messages.append({
@@ -69,12 +63,12 @@ class Conversation:
         for message in self.messages:
             message_text = self.message_template.format(**message)
             final_text += message_text
-        final_text += tokenizer.decode([self.start_token_id, self.bot_token_id])
+        final_text += DEFAULT_RESPONSE_TEMPLATE
         return final_text.strip()
 
 
 def generate(model, tokenizer, prompt, generation_config):
-    data = tokenizer(prompt, return_tensors="pt")
+    data = tokenizer(prompt, return_tensors="pt", add_special_tokens=False)
     data = {k: v.to(model.device) for k, v in data.items()}
     output_ids = model.generate(
         **data,
