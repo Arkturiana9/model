@@ -19,7 +19,7 @@ This is an adapter-only version.
 
 Llama.cpp version: TBA
 
-Colab: TBA
+Colab: [link](https://colab.research.google.com/drive/1C7TTwYDbfEmkHrbgHNIHS-udoWIEQTUo)
 
 Training code: [link](https://github.com/IlyaGusev/rulm/tree/master/self_instruct).
 
