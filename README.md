@@ -11,7 +11,7 @@ pipeline_tag: conversational
 license: cc-by-4.0
 ---
 
-# Saiga2 7B, Russian LLaMA2-based chatbot
+# Saiga/Mistral 7B, Russian Mistral-based chatbot
 
 Based on [Mistral OpenOrca](https://huggingface.co/Open-Orca/Mistral-7B-OpenOrca).
 
