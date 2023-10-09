@@ -113,13 +113,15 @@ for inp in inputs:
 Examples:
 ```
 User: Почему трава зеленая? 
-Saiga: ```
+Saiga:
+```
 
 ```
 User: Сочини длинный рассказ, обязательно упоминая следующие объекты. Дано: Таня, мяч
 Saiga:
 ```
 
+v1:
 - dataset code revision d0d123dd221e10bb2a3383bcb1c6e4efe1b4a28a
 - wandb [link](https://wandb.ai/ilyagusev/rulm_self_instruct/runs/ip1qmm9p)
 - 5 datasets: ru_turbo_saiga, ru_sharegpt_cleaned, oasst1_ru_main_branch, gpt_roleplay_realm, ru_instruct_gpt4
