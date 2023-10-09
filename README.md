@@ -24,6 +24,7 @@ Colab: TBA
 Training code: [link](https://github.com/IlyaGusev/rulm/tree/master/self_instruct).
 
 ```python
+import torch
 from peft import PeftModel, PeftConfig
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
 
