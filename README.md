@@ -1,6 +1,5 @@
 ---
 datasets:
-- IlyaGusev/ru_turbo_alpaca
 - IlyaGusev/ru_turbo_saiga
 - IlyaGusev/ru_sharegpt_cleaned
 - IlyaGusev/oasst1_ru_main_branch
