@@ -17,7 +17,7 @@ Based on [Mistral OpenOrca](https://huggingface.co/Open-Orca/Mistral-7B-OpenOrca
 
 This is an adapter-only version.
 
-Llama.cpp version: TBA
+Llama.cpp version: [link](https://huggingface.co/IlyaGusev/saiga_mistral_7b_gguf)
 
 Colab: [link](https://colab.research.google.com/drive/1C7TTwYDbfEmkHrbgHNIHS-udoWIEQTUo)
 
